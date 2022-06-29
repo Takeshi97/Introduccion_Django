@@ -1,0 +1,55 @@
+******************* Comandos en CMD *******************
+
+https://www.liquidweb.com/kb/install-pip-windows/
+
+D:\Documents\-- Practica Python with anaconda\Introduccion>pip install virtualenv
+
+pip -v
+
+virtualenv env     (virtualenv[comando]) (env[nombre de la carpeta que se está creando])
+
+*********** Activacion de ambiente virtual **
+
+cd env [carpeta env]
+
+cd Scripts
+
+activate
+
+*********************************************
+
+######### gir ignore ##########
+https://github.com/github/gitignore/blob/main/Python.gitignore
+
+######### Django Pypi #########
+https://pypi.org/project/Django/
+
+
+*********** Instalacion de Django desde el archivo .txt
+pip install -r requirements.txt
+
+**************  Crear Proyecto Django ***************
+django-admin startproject core .                        # Se crea la carpeta core con archivos py
+
+- parte inferior izquierda, click y ponerle nombre crear-proyecto-django -- Luego pulsar enter
+
+***************************************************************
+
+
+
+------------------------- correr Django con manage.py(servidor) -------------------------
+codigo en CMD con el ambiente activo (activate)
+
+python manage.py runserver
+
+-------------------------------------------------------------------------------------------------
+
+La consola mostrara la ip del servidor Django --> http://127.0.0.1:8000/
+Al ingresar a esa direccion(http://127.0.0.1:8000/) muestra nuestra pagina web
+
+
+
+
+
+
+
