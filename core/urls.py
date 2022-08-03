@@ -14,8 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path         
+
+from .views import HomeView              # importamos HomeView  desde views.py que CREAMOS  // el . significa que esta en la misma carpeta
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
+    path('', HomeView.as_view(), name="home")   # Aqui se crea una URL con la vista que creamos que es views.py  // el '' del inicio quiere decir que es la direccion estandar[principal] y un name de identificacion 
 ]

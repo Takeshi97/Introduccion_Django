@@ -31,7 +31,7 @@ pip install -r requirements.txt
 **************  Crear Proyecto Django ***************
 django-admin startproject core .                        # Se crea la carpeta core con archivos py
 
-- parte inferior izquierda, click y ponerle nombre crear-proyecto-django -- Luego pulsar enter
+- parte inferior izquierda, click y ponerle nombre crear-proyecto-django -- Luego pulsar enter   --> git hub
 
 ***************************************************************
 
@@ -46,6 +46,62 @@ python manage.py runserver
 
 La consola mostrara la ip del servidor Django --> http://127.0.0.1:8000/
 Al ingresar a esa direccion(http://127.0.0.1:8000/) muestra nuestra pagina web
+
+-------------------------------------------------------------------------------------------------
+
+Para regresar al estado normal de la consola seleccionar Control + c
+
+-------------------------------------------------------------------------------------------------
+
+---> En la consola colocar __> python manage.py migrate      ### Con este comando se hacen las migraciones
+
+Se hacen las migraciones para la auth autenticacion predeterminada de DJango (sistema --> hacer login como admnistrador)
+
+En la base de datos se han aplicado las migraciones
+
+-------------------------------------------------------------------------------------------------
+
+Se hace desde la consola normal en la ubicacion de introduccion_Django con en ambiente activo
+
+Crear administrador con DJango
+
+---> En la consola colocar __> python manage.py createsuperuser
+
+luego colocar username: ---> En la consola colocar __>  admin                   ## puede ser cualquiera
+luego colocar Email address: ---> En la consola colocar __> mail@admin.com      ## puede ser cualquiera
+luego colocar Password: ---> En la consola colocar __>  admin123                ## puede ser cualquiera
+luego colocar Password (again): ---> En la consola colocar __>  admin123
+Bypass password validation and create user anyway? [y/N]: ---> En la consola colocar __> y
+por ultimo aparece en consola 
+Superuser created successfully.
+
+-------------------------------------------------------------------------------------------------
+
+Para ingresar con usuario y contraseña en DJango 
+
+correr el servidor con  ---> python manage.py runserver
+
+ingresar el usuario y contraseña antes creados que son:
+ Usuario: admin 
+ Pass: admin123
+ E-Mail: mail@admin.com
+
+-- Gracias a las migraciones hechas antes se puede ingresar al sistema.
+
+
+-------------------------------------------------------------------------------------------------
+
+--- Para instalar paquetes hay que tener activo el ambiente y ademas salir del servidor DJango con ctrl + c ---
+
+######### django-environ 0.9.0 #########
+https://pypi.org/project/django-environ/
+
+
+*********** Instalacion de Django environ desde el archivo .txt
+pip install -r requirements.txt
+
+
+********** Minuto **
 
 
 
